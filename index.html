@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@latest"></script>
+         <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Document Atelier tailwind css2</title>
+</head>
+<body>
+
+     <!-- Mon navbar -->
+       <nav class="lg:flex items-center justify-between py-4 px-5 mt-5 mx-5 lg:mx-70 rounded-[50px] fixed top-0 left-0 right-0 z-999 lg:bg-white/70 lg:backdrop-blur-none">
+        <!-- Logo et btn burguer -->
+         <div class="rounded-[30px] px-5 py-5 bg-white/50 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-0 flex items-center justify-between">
+            <a href="#">
+                <img src="Image/logo.svg" class="w-30" alt="logo de mon site">
+            </a>
+          <div class="lg:hidden flex items-center gap-10">
+             <!-- btn de connexion -->
+              <div class="flex items-center gap-2">
+                <a href="#">Connexion</a>
+                <a href="#" class="btn btn-sm bg-black text-white rounded-3xl transition-all duration-300 hover:bg-orange-600">Essaie Gratuit</a>
+              </div>
+              <label for="burger" class="flex flex-col gap-2 hover:cursor-pointer">
+           <i class="bi bi-list text-3xl"></i>
+            </label>
+          </div>
+         </div>
+         <!-- Check pour afficher et cacher les menus su mobile -->
+         <input type="checkbox" name="burger" id="burger" class="peer hidden">
+         <!-- le menus -->
+         <div class="rounded-[30px] bg-white/50 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-0 hidden peer-checked:flex flex-col lg:flex lg:flex-row lg:items-center gap-5 mt-3 lg:mt-0 px-5 py-5">
+           <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Accueil</a>
+            <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Probleme</a>
+             <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Pour qui?</a>
+              <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Fonctionnalités</a>
+               <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Tarifs</a>
+         </div>
+
+           <!-- btn de connexion -->
+              <div class="hidden lg:flex items-center gap-2">
+                <a href="#" class="transtion duration-300 hover:text-orange-600">Connexion</a>
+                <a href="#" class="btn bg-black text-white rounded-3xl transition-all duration-300 hover:bg-orange-600">Essaie Gratuit</a>
+              </div>
+       </nav>    
+
+       <!-- La section hero -->
+    <div
+  class="hero min-h-screen"
+  style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);"
+>
+  <div class="hero-overlay"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+      <p class="mb-5">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      </p>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
