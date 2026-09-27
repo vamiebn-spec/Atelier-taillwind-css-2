@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Document Atelier tailwind css2</title>
 </head>
-<body>
+<body class="bg-orange-50 scroll-smooth">
 
      <!-- Mon navbar -->
-       <nav class="lg:flex items-center justify-between py-4 px-5 mt-5 mx-5 lg:mx-70 rounded-[50px] fixed top-0 left-0 right-0 z-999 lg:bg-white/70 lg:backdrop-blur-none">
+       <nav class="lg:flex items-center justify-between py-4 px-5 mt-5 mx-5 lg:mx-70 rounded-[50px] fixed top-0 left-0 right-0 z-999 lg:backdrop-blur-none">
         <!-- Logo et btn burguer -->
          <div class="rounded-[30px] px-5 py-5 bg-white/50 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-0 flex items-center justify-between">
             <a href="#">
@@ -32,37 +32,126 @@
          <input type="checkbox" name="burger" id="burger" class="peer hidden">
          <!-- le menus -->
          <div class="rounded-[30px] bg-white/50 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-0 hidden peer-checked:flex flex-col lg:flex lg:flex-row lg:items-center gap-5 mt-3 lg:mt-0 px-5 py-5">
-           <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Accueil</a>
-            <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Probleme</a>
-             <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Pour qui?</a>
-              <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Fonctionnalités</a>
-               <a href="#" class="text-gray-500 transition duration-300 hover:text-orange-600">Tarifs</a>
+           <a href="#accueil" class="text-gray-500  text-xl transition duration-300 hover:text-orange-600">Accueil</a>
+            <a href="#probleme" class="text-gray-500  text-xl transition duration-300 hover:text-orange-600">Probleme</a>
+             <a href="#pour qui" class="text-gray-500  text-xl transition duration-300 hover:text-orange-600">Pour qui?</a>
+              <a href="#tarifs" class="text-gray-500  text-xl transition duration-300 hover:text-orange-600">Fonctionnalités</a>
+               <a href="#" class="text-gray-500 text-xl  transition duration-300 hover:text-orange-600">Tarifs</a>
          </div>
-
            <!-- btn de connexion -->
               <div class="hidden lg:flex items-center gap-2">
-                <a href="#" class="transtion duration-300 hover:text-orange-600">Connexion</a>
-                <a href="#" class="btn bg-black text-white rounded-3xl transition-all duration-300 hover:bg-orange-600">Essaie Gratuit</a>
+                <a href="#" class=" text-2xl transtion duration-300 hover:text-orange-600">Connexion</a>
+                <a href="#" class="btn bg-black text-white py-7 text-xl rounded-3xl transition-all duration-300 hover:bg-orange-600">Essaie Gratuit</a>
               </div>
        </nav>    
 
        <!-- La section hero -->
-    <div
-  class="hero min-h-screen"
-  style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);"
->
-  <div class="hero-overlay"></div>
-  <div class="hero-content text-neutral-content text-center">
-    <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-      <p class="mb-5">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-      <button class="btn btn-primary">Get Started</button>
-    </div>
-  </div>
-</div>
+       
+       <section class=" relative py-35 lg:py-40 grid grid-cols-1 lg:grid-cols-2 justify-between items-center px-7 lg:px-20 gap-5 lg:gap-80 lg:space-y-70">
+        <!-- Les textes et paragraphe -->
+        <div>
+          <div class="flex justify-center items-center lg:justify-start">
+          <img src="Image/IMG.jpeg" class="w-25 lg:w-30 py-5 lg:px-2" alt="logo de mon site">
+         </div>
+         <div class="flex items-center lg:justify-start lg:items-start lg:px-7 lg:py-3 lg:inline-block bg-orange-200/20 border-2 border-orange-300 rounded-3xl py-3 px-5">
+          <h3 class="text-gray-600 text-lg lg:text-xl font-semibold uppercase">Gérez votre caisse à distance</h3>
+        </div>
+
+         <div class="flex justify-center items-center text-4xl font-bold text-gray-800 py-5 lg:justify-start lg:text-7xl">
+          <h1>Le patron voit tout,</h1>
+         </div>
+         <div class="flex text-center leading-relaxed indent-1 max-w-[90%] text-gray-600 mb-3  lg:text-2xl lg:max-w-[100%] lg:text-start ">
+          <p>Gérez vos ventes, votre stock et vos employés depuis votre téléphone — sans cahier, sans stress, sans mauvaise surprise.</p>
+         </div>
+         <div class="flex flex-col items-center py-2 lg:flex-row gap-10">
+          <a href="#" class="bg-orange-600 px-5 py-2 rounded-3xl text-white font-bold transition duration-300 ease-in hover:bg-orange-700 lg:py-4 lg:text-xl lg:rounded-[50px]">Démarrer mon essaie gratuit(14 jours)</a>
+          <div>
+              <a href="#" class="bg-white/90 py-4 px-4 text-lg rounded-[20px] lg:text-2xl transition duration-300 ease-in hover:bg-orange-100/50 border-2 border-orange-200 font-bold "><i class="bi bi-play-fill text-3xl"></i>Voir la démo</a>
+          </div>
+         </div>
+          <div class="flex flex-row items-center lg:flex-wrap gap-2 lg:gap-5 py-5">
+            <div class="flex items-center gap-1">
+              <i class="bi bi-check2 font-bold text-xl lg:text-3xl text-teal-500 shrink-0"></i>
+              <p class="text-gray-600 text-sm lg:text-xl font-semibold">Acune carte requise</p>
+            </div>
+            <div class="flex items-center gap-1">
+              <i class="bi bi-check2 font-bold text-xl lg:text-3xl text-teal-500 shrink-0"></i>
+              <p class="text-gray-600 text-sm lg:text-xl font-semibold">Configuration en 2 min</p>
+            </div>
+       </div>
+       </div>
+      
+        
+        <!-- Le mockup-phone -->
+        <div class="mockup-phone border-orange-300">
+          <!-- La camera de devant -->
+          <div class="mockup-phone-camera bg-transparent border-2 border-orange-500 flex justify-between items-center mt-8"></div>
+          <div class="mockup-phone-display">
+          
+              <h2 class="font-bold">Bienvenue dans mockup</h2>
+        
+            <!-- L'image de fond d'ecran -->
+          <img alt="wallpaper" src="Image/hero.jpg" class="bg-cover bg-no-repeat bg-center" />
+          </div>
+        </div>
+       </section>    
+
+        <!-- Les section Probleme -->
+         
+        <section id="probleme" class="py-20">
+          <div class="flex flex-col items-center gap-5">
+            <h4 class=" text-xl lg:text-5xl text-orange-600 font-semibold">Le contrat</h4>
+            <h1 class=" text-3xl lg:text-7xl font-bold text-center max-w-[70%]">Tenir une boutique à distance est un combat quotidien</h1>
+            <p class="text-sm max-w-[85%] indent-2 leading-relaxed text-center lg:text-2xl lg:px-80">Le cahier est le premier ennemi de votre croissance. Il n'est pas fiable et ralentit votre commerce.</p>
+          </div>
+
+          <!-- Les problèmes -->
+           <div class="grid grid-cols-1 lg:grid-cols-3 relative items-center gap-10 px-9 py-5 lg:py-20 lg:px-20 lg:gap-20">
+            <div class="bg-white py-5 px-5 lg:py-10 lg:px-7 items-center w-[20rem] h-[15] lg:w-[36rem] lg:h-[30rem]  rounded-[40px] lg:rounded-[50px] shadow-[0_0_15px_rgba(200,200,200,0.8)]">
+              <a href="#"><i class="bi bi-book text-5xl text-orange-600/70 px-3 bg-red-400/20 rounded-[80px]"></i></a>
+              <h2 class="text-xl lg:text-4xl font-semibold text-gray-800 px-2 max-w-[100%] py-3">Le cahier se perd, les comptes ne sont jamais à jour</h2>
+              <p class=" lg:text-2xl leading-relaxed py-2 lg:py-5 text-gray-600/90 font-semibold">Ratures, pages arrachées, oublis fréquents. À la fin de la journée, vous ne savez jamais combien d'argent doit réellement être en caisse.</p>
+            </div>
+               <div class="bg-white py-5 px-5 lg:py-10 lg:px-7 items-center w-[20rem] h-[15] lg:w-[36rem] lg:h-[30rem]  rounded-[40px] lg:rounded-[50px] shadow-[0_0_15px_rgba(200,200,200,0.8)]">
+              <a href="#"><i class="bi bi-eye-slash-fill text-5xl text-orange-600/70 px-3 bg-yellow-400/20 rounded-[80px]"></i></a>
+              <h2 class="text-xl lg:text-4xl font-semibold text-gray-800 px-2 max-w-[100%] py-3">Le cahier se perd, les comptes ne sont jamais à jour</h2>
+              <p class=" lg:text-2xl leading-relaxed py-2 lg:py-5 text-gray-600/90 font-semibold">Ratures, pages arrachées, oublis fréquents. À la fin de la journée, vous ne savez jamais combien d'argent doit réellement être en caisse.</p>
+            </div>
+               <div class="bg-white py-5 px-5 lg:py-10 lg:px-7 items-center w-[20rem] h-[15] lg:w-[36rem] lg:h-[30rem]  rounded-[40px] lg:rounded-[50px] shadow-[0_0_15px_rgba(200,200,200,0.8)]">
+              <a href="#"><i class="bi bi-postage text-5xl text-blue-600/70 px-3 bg-blue-400/20 rounded-[80px]"></i></a>
+              <h2 class="text-xl lg:text-4xl font-semibold text-gray-800 px-2 max-w-[100%] py-3">Le cahier se perd, les comptes ne sont jamais à jour</h2>
+              <p class=" lg:text-2xl leading-relaxed py-2 lg:py-5 text-gray-600/90 font-semibold">Ratures, pages arrachées, oublis fréquents. À la fin de la journée, vous ne savez jamais combien d'argent doit réellement être en caisse.</p>
+            </div>
+           </div>
+        </section>
+        <!-- la section Pour qui -->
+         <section id="pour qui" class="py-20">
+
+           <div class="flex flex-col items-center gap-5">
+            <h4 class=" text-xl lg:text-5xl text-orange-600 font-semibold">Deux profils</h4>
+            <h1 class=" text-3xl lg:text-7xl font-bold text-center max-w-[70%]">Une version adaptée à la taille de votre commerce</h1>
+            <p class="text-sm max-w-[85%] indent-2 leading-relaxed text-center lg:text-2xl lg:px-80">Que vous soyez seul ou épaulé par des employés, DARO s'adapte sans surcharger votre quotidien.</p>
+          </div>
+
+          <!-- Les grilles-->
+           <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 py-5 px-5">
+            <div class="flex flex-col py-5 lg:py-7 px-5  gap-4 lg:gap-8 rounded-[30px] lg:rounded-[40px] lg:h-[30rem] mx-3 lg:mx-20 bg-white lg:max-w-[66%] shadow-[0_0_15px_rgba(200,200,200,0.8)]">
+              <h2 class="bg-orange-200/30 font-bold text-orange-600 uppercase inline-block px- lg:px-6 w-37 py-1 rounded-2xl">Mode Solo</h2>
+              <h3 class="px-3 font-bold lg:text-3xl">DARO Solo</h3>
+              <p class=" text-sm lg:text-xl lg:px-3 text-gray-600 font-semibold">Idéal pour les gérants indépendants, quincailliers ou propriétaires de boutiques qui travaillent seuls. DARO Solo vous permet d'enregistrer vos ventes en quelques secondes, de suivre l'état de votre stock en temps réel et de connaître vos bénéfices nets chaque soir, sans avoir à tenir de cahier papier fastidieux.</p>
+              <a href="#" class="btn bg-black text-white font-bold text-xl py-8 rounded-[40px] transition duration-300 ease-in hover:bg-orange-500 ">Découvrir DARO solo</a>
+            </div>
+
+             <div class="flex flex-col py-5 lg:py-7 px-5  gap-4 lg:gap-8 rounded-[30px] lg:rounded-[40px] lg:h-[30rem] mx-3 lg:mx-20 bg-white lg:max-w-[66%] shadow-[0_0_15px_rgba(200,200,200,0.8)] border-3 border-orange-600">
+              <h2 class="bg-orange-200/30 font-bold text-orange-600 uppercase inline-block px- lg:px-6 w-37 py-1 rounded-2xl">Mode Solo</h2>
+              <h3 class="px-3 font-bold lg:text-3xl">DARO Solo</h3>
+              <p class=" text-sm lg:text-xl lg:px-3 text-gray-600 font-semibold">Idéal pour les gérants indépendants, quincailliers ou propriétaires de boutiques qui travaillent seuls. DARO Solo vous permet d'enregistrer vos ventes en quelques secondes, de suivre l'état de votre stock en temps réel et de connaître vos bénéfices nets chaque soir, sans avoir à tenir de cahier papier fastidieux.</p>
+              <a href="#" class="btn bg-orange-500 text-white font-bold text-xl py-8 rounded-[40px] transition duration-300 ease-in hover:bg-orange-600">Découvrir DARO solo</a>
+            </div>
+           </div>
+         </section>
+
+   
 
 </body>
 </html>
